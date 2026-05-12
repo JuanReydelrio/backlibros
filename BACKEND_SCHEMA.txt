@@ -1,0 +1,24 @@
+BACKEND SCHEMA
+
+Este archivo describe el propósito de cada carpeta y de los archivos principales para usar este repositorio como plantilla.
+
+Carpetas:
+- crud/: capa de acceso a datos. Aquí van funciones para crear, leer, actualizar y borrar registros.
+- models/: definición de los modelos de datos o entidades (clases ORM, DTOs o estructuras de negocio).
+- routes/: definición de las rutas o endpoints de la API. Cada archivo se encarga de un grupo de recursos.
+- schemas/: validación y serialización de datos de entrada/salida. Se usan para verificar los datos recibidos por la API.
+- services/: lógica de negocio y utilidades. Aquí van servicios que procesan datos, envían correos, gestionan seguridad, etc.
+
+Archivos raíz:
+- app.py: punto de entrada de la aplicación. Se usa para configurar y ejecutar el servidor.
+- database.py: configuración de la conexión a la base de datos y creación de la sesión.
+- security.py: funciones de seguridad compartidas, como autenticación, autorización y cifrado.
+- emailtest.py: archivo de prueba o utilitario para envío de correos. En la plantilla queda vacío como referencia.
+- testdb.py: archivo de prueba para la base de datos. En la plantilla queda vacío como referencia.
+- requirements.txt: lista de dependencias del proyecto. En la plantilla queda vacío para que agregues solo lo necesario.
+- Dockerfile: definición de contenedor opcional. En la plantilla queda vacío para que definas tu propio entorno de despliegue.
+
+Notas:
+- Mantén esta estructura básica para clonar y empezar a crear tu backend.
+- Los archivos raíz están vacíos para que puedas adaptarlos a cualquier stack de backend.
+- Las carpetas contienen un archivo .gitkeep para preservar la estructura de directorios en el repositorio.
